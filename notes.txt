@@ -124,3 +124,112 @@ aws_secret_access_key=k0BtpI41jszBKi58CNG0f1YHN74CBK/9FXVBN6jS
 aws_session_token=IQoJb3JpZ2luX2VjEFYaDGV1LWNlbnRyYWwtMSJHMEUCIQCrIF9sybBV7W/cH6D7DWRSjBwmgdMdjVyU5+APQoKIZAIgR51tuNVM/1FayXMaC0FYDLPCgxVZnSkZphkd5pv/XgUqnQMIPxAAGgw3OTcyMzAxMjE2NjEiDFFp6pOTjYO2TxRSuir6AuH0KNIh96z2u25taKZVzdIEgZwTWxisZGg1wW0KgTqWqOgtdamo7oX/BBcH0fUYroKlxDtBfRg5fCHdsbhTg8sVtG37oL++GvgC9vUkd+gAWBpBbNWCGib2+Fp46f2Txn/cep1RqETumWGmdagmLh1XsnE0pJh6Xr+9VKUV1o0j9/rXbERwRGfOSEy1MF7BAHoXSRlA6bQL91yuMRxl2uHo5UPYgDP/hulcSImgDD5kBBXkLjNB2w73Xasx+pTRC9iidLV2FUOfirUZkmUj5KjvwIMo2R+X+5aP/8JdOgVf1IxbFmJYsZBvIHo7leHy1kKCFsyQzwYbAJAlYZ4jGDT7Oe+3EsKTMhG7uD1/ZKjOSI8AZSm9acWkOz+Hc0hKyo6yM4vyt4GmZjTefjgR8JagJ+NA7joEJcXe68K+6vzmfqrcVbTonF1ImdQDsIEQ1oEVrXyjPQwzY1EhkPiYmJh/pJmcIjhH1EROarCOJTb+2GWsFOtCA86IRzDBqdauBjqmAVuviUtM7QIiIUPgL/x4N36wogzaM7F5VavIp8tJcWdmzkcKCjT/NUkx9Z3evSCmpoLiMChdDKnKz2bpcEtfoU6SREFEVz8yuNhtCXKWmJ2HzEnudgGy8pk3X1RuCZPdn1FkQE+6DXWtR55TpUtcR5KHDr5UH7SsyYnFWzGMyvH0qYE8XFE12Rpug/GrNprwhdZ0uqgH+sYjOp4zuzMUoDTTbEQkjww=
 region=eu-central-1
 output=json
+
+
+
+
+
+######################################################instructions###################################################
+
+
+
+
+cd /c/workspace/PROJ_FOLDER-Python
+
+tuhin.som@external.milliporesigma.com
+
+ssh-keygen -t ed25519 -C "tuhin.som@external.milliporesigma.com"
+
+### /c/Users/X256671@one.merckgroup.com/.ssh/id_ed25519
+ssh-add ~/.ssh/id_ed25519
+
+eval $(ssh-agent -s)
+
+ssh-add /c/tuhin/SSHKeys/merck_local
+
+########## in ubuntu################
+
+/home/pyenv/.ssh
+
+sudo apt-get --allow-unauthenticated upgrade # for bypassing signature check
+
+sudo apt-get install --allow-unauthenticated \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+python -m pip install 
+
+sudo service ssh --full-restart
+# 172.28.112.1 , 10.192.165.81
+
+############################ Windows venv ###################
+C:\workspace\Projfolder-Python\venvPROJ\Scripts\activate
+pip install C:\workspace\PROJ_FOLDER-Python\PROJ_FOLDER-python-common\dist\PROJ_pvc_python_common-1.0.0-py2.py3-none-any.whl --force-reinstall
+pip install C:\workspace\PROJ_FOLDER-Python\PROJ_FOLDER-python-molecule\dist\PROJ_pvc_python_molecule-1.1.1-py2.py3-none-any.whl  --force-reinstal
+
+cmd.exe   "/K"  "C:\workspace\PROJ_FOLDER-Python\venvPROJ\Scripts\activate"  "C:\workspace\PROJ_FOLDER-Python\venvPROJ"
+cmd.exe   "/K"  "C:\ProgramData\mambaforge\Scripts\activate.bat"  "C:\ProgramData\mambaforge"
+
+###################ubuntu venv###################
+python3 -m venv PROJ-venv
+source /home/pyenv/PROJ-venv/bin/activate
+
+############################## Postgres installation and usage ###########################
+/etc/postgresql/12/main/
+sudo service postgresql start
+service postgresql status
+pg_lsclusters 
+pg_ctlcluster 12 main start
+
+sudo -u postgres psql
+\conninfo #You are connected to database "postgres" as user "postgres" via socket in "/var/run/postgresql" at port "5432".
+\l # all databases
+\du #all db users
+\password postgres # create password for db postgres
+
+
+psql -d postgres -U usr_ten1 # login with some user to some db: 
+
+CREATE USER usr_ten1 WITH PASSWORD 'usr_ten1'; 
+
+CREATE DATABASE PROJ_test_database OWNER usr_ten1;
+
+
+
+################################### git branch naming pattern #######################
+
+git checkout -b feature/PVCAID-20491-implementing-opensearch-mdc-logger-upload-molecule-workflow
+git push origin feature/PVCAID-20491-implementing-opensearch-mdc-logger-upload-molecule-workflow
+https://dfwstp01.sial.com/projects/AID/repos/PROJ_FOLDER-python-molecule/pull-requests?create&sourceBranch=refs%2Fheads%2Ffeature%2FPVCAID-20491-implementing-opensearch-mdc-logger-upload-molecule-workflow
+
+
+git checkout -b feature/PVCAID-20491-opensearch-mdc-logger-common
+git push origin feature/PVCAID-20491-opensearch-mdc-logger-common
+
+
+################################## test scenarios ##############################
+
+pytest dockerfile/api/tests/integrationtests/test_upload_endpoint.py::test_upload_single_molecule_success
+pytest dockerfile/api/tests/integrationtests/test_properties_calculation.py::test_prepare_batches_with_1000_smiles_and_rdkit_unhidden_and_calculate_rdkit
+
+
+################################# GIT stash commands
+git stash {saves all modified to a stash}
+or
+git stash push -m "some description here" <files list here>
+or
+git stash save "remove semi-colon from schema"
+
+git stash list
+
+git stash apply <index|optional>
+
+git stash pop <index>
+
+git stash drop <index>
+git stash clear
+
+Ex:
+git stash push -m "unit test case for shapebased" dockerfile/sqs/app/shapebased_workflow.py dockerfile/sqs/tests/conftest.py dockerfile/sqs/tests/integrationtests/actions.py dockerfile/sqs/tests/integrationtests/test_entire_shapebased_search_workflow.py test/scripts/insert_5_smiles_to_smiles_structure.sql test/files/mol_block.sdf dockerfile/sqs/tests/integrationtests/test_entire_shapebased_search_workflow.py
