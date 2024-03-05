@@ -1,0 +1,116 @@
+cloudformation:
+https://www.youtube.com/watch?v=YXVCdGyHDSk
+
+https://merckkga.plateau.com/learning/user/learning/viewCurriculumDetails.do?rootQualificationID=UP_TEC&qualificationID=UP_TEC&showBackLink=true&hasQualAssigned=false&addUser=&addUserName=
+
+AWS Glue with step function
+https://www.youtube.com/watch?v=KpLm3DFb1h0
+
+
+
+https://www.youtube.com/watch?v=IaerX0Y6wmE&list=PLF9mJC4RrjIhS4MMm0x72-qWEn1LRvPuW&index=4
+
+aws s3api list-buckets --no-verify-ssl s3
+
+$ aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Default region name [None]: us-west-2
+Default output format [None]: json
+
+$ aws configure import --csv file://credentials.csv
+
+
+
+
+
+
+J C Licklider
+John McCarthy
+Arthur Samuel
+Kevin Ashton
+Patrick Dubols
+Phill Fersht
+Associate_architect:
+1. https://cognizant.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/13528014#overview
+2. https://cognizant.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/learn/quiz/4492706#overview
+3. https://forms.office.com/Pages/ResponsePage.aspx?id=B8QI3rkZfUKf6O3yVDAMpzCavZpHdzVOv7Bf2RQowGFUOVlFWTJIMzNIMFNEOUoxRlkySUdNTk1DWS4u
+COGNIZANT DELIVERY PRACTICES (CDP) M+ [101-BASICS]
+https://cognizantlearning.sumtotal.host/rcore/c/pillarRedirect?relyingParty=LM&url=app%2fmanagement%2fLMS_ActDetails.aspx%3fActivityId%3d1940894%26UserMode%3d0
+
+Ultimate AWS Certified Solutions Architect Associate SAA-C03 (2196488)
+
+ 
+
+udemy course : https://cognizant.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/13528014#overview
+
+ 
+
+mock test :  https://cognizant.udemy.com/course/aws-certified-solutions-architect-associate-practice-tests-k/learn/quiz/4492706#overview
+
+ 
+
+aws voucher form: 
+
+ 
+
+https://forms.office.com/Pages/ResponsePage.aspx?id=B8QI3rkZfUKf6O3yVDAMpzCavZpHdzVOv7Bf2RQowGFUOVlFWTJIMzNIMFNEOUoxRlkySUdNTk1DWS4u
+
+ 
+
+Step 1: Complete the Udemy course and take screenshot of the certificate.
+
+Step 2: Complete any one mock test and get more than 70 % marks and take screenshot.
+
+Step 3:Fill the voucher mail and after that you will get the voucher of 100 % free and schedule your exam , that steps they will provide in one mail and in another mail they will provide the 100 % free voucher code .
+
+
+https://www.youtube.com/@QuickNode/videos
+
+1. API and SQS - how to test from local, what are the dependencies
+2. what is the call flow, architecture for lambda services
+
+----------
+Catalog manager
+properties calculator
+docker build in win
+
+
+pycharm prompt:
+cmd.exe  "/K"  "C:\ProgramData\mambaforge\Scripts\activate.bat"  "C:\ProgramData\mambaforge"
+
+
+Pycharm Remote interpreter:
+https://www.jetbrains.com/help/pycharm/using-wsl-as-a-remote-interpreter.html#wsl-terminal
+
+
+
+
+
+ping 172.18.195.1 -t
+
+pains = pan assey interference . alerts. reactive funcional groups
+
+FPSim 2 for similarity seach (rdkit)
+Ftree for pharmacophore search
+
+git stash
+or
+git stash push -m "some description here"
+or
+git stash save "remove semi-colon from schema"
+
+git stash list
+git stash apply <index|optional>
+git stash pop <index>
+git stash drop <index>
+
+git stash push -m "unit test case for shapebased" dockerfile/sqs/app/shapebased_workflow.py dockerfile/sqs/tests/conftest.py
+
+task:
+Catalog manager
+properties calculator
+docker build in win
+
+
+
